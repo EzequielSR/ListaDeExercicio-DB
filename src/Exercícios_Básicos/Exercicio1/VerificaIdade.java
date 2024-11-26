@@ -4,20 +4,21 @@
 //Resolução:
 package Exercícios_Básicos.Exercicio1;
 
+import java.util.Scanner;
+
 public class VerificaIdade {
 
-    public static String verificarIdade(int idade) {
-        if (idade >= 18) {
-            return "Você é maior de idade";
-        } else {
-            return "Você ainda é menor de idade";
-        }
-    }
-
-    // Teste da função
     public static void main(String[] args) {
-        System.out.println(verificarIdade(17));
-        System.out.println(verificarIdade(20));
-        System.out.println(verificarIdade(18));
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Qual a sua idade: ");
+        int idade = scanner.nextInt();
+
+        if (idade >= 18) {
+            System.out.println("Você é maior de idade");
+        } else {
+            System.out.println("Você ainda é menor de idade");
+        }
+        scanner.close();
     }
 }
