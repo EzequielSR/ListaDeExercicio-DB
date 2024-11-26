@@ -2,7 +2,7 @@
 // 1) Definir a idade de uma pessoa e verificar se ela é maior de idade ou não.
 
 //Resolução:
-package Exercícios_Básicos.Exercicio1;
+package Exercícios_Básicos.Exercicio_1;
 
 import java.util.Scanner;
 

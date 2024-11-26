@@ -1,4 +1,4 @@
-package Estrutura_de_Repetição.Exercicio5;
+package Estrutura_de_Repetição.Exercicio_5;
 
 import java.util.Scanner;
 

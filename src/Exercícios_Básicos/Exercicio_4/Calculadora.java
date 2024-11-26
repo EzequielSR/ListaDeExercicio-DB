@@ -5,7 +5,7 @@ conforme o usuário escolheu no menu de opções. */
 
 
 // Resolução:
-package Exercícios_Básicos.Exercicio4;
+package Exercícios_Básicos.Exercicio_4;
 
 import java.util.Scanner;
 

@@ -9,7 +9,7 @@ segundo a tabela abaixo:
 
 // Resolução:
 
-package Exercícios_Básicos.Exercicio2;
+package Exercícios_Básicos.Exercicio_2;
 
 import java.util.ArrayList;
 import java.util.List;

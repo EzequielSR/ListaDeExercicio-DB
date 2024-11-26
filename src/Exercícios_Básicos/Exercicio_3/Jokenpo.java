@@ -4,7 +4,7 @@ aleatoriamente e comparar com o que escolhemos. */
 
 // Resolução:
 
-package Exercícios_Básicos.Exercicio3;
+package Exercícios_Básicos.Exercicio_3;
 
 import java.util.Random;
 import java.util.Scanner;
