@@ -1,3 +1,8 @@
+/* 10) Leia uma matriz quadrada e determine a soma da diagonal
+principal. */
+
+// Resolução:
+
 package Vetores_e_Matrizes.Exercicio_10;
 
 import java.util.Scanner;
