@@ -16,7 +16,7 @@ public class NumerosAleatorios {
         List<Integer> numeros = new ArrayList<>();
         Random random = new Random();
 
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             numeros.add(random.nextInt(101));
         }
 
