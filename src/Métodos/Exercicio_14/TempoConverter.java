@@ -11,20 +11,20 @@ package Métodos.Exercicio_14;
 import java.util.Scanner;
 
 public class TempoConverter {
-    private static int lerTempoSegundos(){
+    private static int lerTempoSegundos() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite o tempo em segundos: ");
         return scanner.nextInt();
     }
 
-    private static int[] converterTempo(int segundos){
+    private static int[] converterTempo(int segundos) {
         int horas = segundos / 3600;
         int minutos = (segundos % 3600) / 60;
         int segundoRestantes = segundos % 60;
         return new int[]{horas, minutos, segundoRestantes};
     }
 
-    private static void exibirResultado(int horas, int minutos, int segundos){
+    private static void exibirResultado(int horas, int minutos, int segundos) {
         System.out.println(horas + " hr " + minutos + " min " + segundos + " seg ");
     }
 

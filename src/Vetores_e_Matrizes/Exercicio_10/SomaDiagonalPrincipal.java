@@ -17,8 +17,8 @@ public class SomaDiagonalPrincipal {
         int[][] matriz = new int[tamanho][tamanho];
 
         System.out.println("Digite os elementos da matriz:");
-        for (int i = 0; i < tamanho; i++){
-            for (int j = 0; j < tamanho; j++){
+        for (int i = 0; i < tamanho; i++) {
+            for (int j = 0; j < tamanho; j++) {
                 System.out.println("Elemento [" + i + "][" + j + "]: ");
                 matriz[i][j] = scanner.nextInt();
             }
@@ -29,9 +29,10 @@ public class SomaDiagonalPrincipal {
 
         scanner.close();
     }
-    public static int calcularSomaNaDiagonalPrincipal(int[][] matriz){
+
+    public static int calcularSomaNaDiagonalPrincipal(int[][] matriz) {
         int soma = 0;
-        for (int i = 0; i < matriz.length; i++){
+        for (int i = 0; i < matriz.length; i++) {
             soma += matriz[i][i];
         }
         return soma;

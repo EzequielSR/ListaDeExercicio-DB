@@ -13,20 +13,20 @@ package Métodos.Exercicio_13;
 import java.util.Scanner;
 
 public class Aluno {
-    public static double calcularMedia(double[] notas){
+    public static double calcularMedia(double[] notas) {
         double soma = 0;
-        for (double nota : notas){
+        for (double nota : notas) {
             soma += nota;
         }
         return soma / notas.length;
     }
 
-    public static String obterStatusAluno(double media){
-        if(media > 6){
+    public static String obterStatusAluno(double media) {
+        if (media > 6) {
             return "Aprovado";
-        }else if(media >= 4){
+        } else if (media >= 4) {
             return "Verificação Suplementar";
-        }else{
+        } else {
             return "Reprovado";
         }
     }
@@ -39,7 +39,7 @@ public class Aluno {
 
         double[] notas = new double[numNotas];
 
-        for (int i = 0; i < numNotas; i++){
+        for (int i = 0; i < numNotas; i++) {
             System.out.print("Digite a nota " + (i + 1) + ": ");
             notas[i] = scanner.nextDouble();
         }

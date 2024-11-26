@@ -10,11 +10,11 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class VetoresCombinados {
-    public static int[] gerarEOrdernarVetor(int tamanho, int max){
+    public static int[] gerarEOrdernarVetor(int tamanho, int max) {
         Random random = new Random();
         int[] vetor = new int[tamanho];
 
-        for(int i =0; i < tamanho; i++){
+        for (int i = 0; i < tamanho; i++) {
             vetor[i] = random.nextInt(max);
         }
         Arrays.sort(vetor);
@@ -26,7 +26,7 @@ public class VetoresCombinados {
         int tamanho = 50;
         int max = 100;
 
-        int[] vetor1 = gerarEOrdernarVetor(tamanho,max);
+        int[] vetor1 = gerarEOrdernarVetor(tamanho, max);
         int[] vetor2 = gerarEOrdernarVetor(tamanho, max);
 
         int[] vetorCombinado = new int[vetor1.length + vetor2.length];
