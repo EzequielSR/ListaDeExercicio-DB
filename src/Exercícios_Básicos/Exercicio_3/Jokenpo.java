@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 
 public class Jokenpo {
+    //Método para realizar a jogada, que compara a do jogador com a da máquina.
     public static String jogar(String escolhaJogador) {
         String[] opcoes = {"pedra", "papel", "tesoura"};
 
@@ -24,6 +25,7 @@ public class Jokenpo {
             return "Empate!";
         }
 
+        //Verifica se o jogador ganhou
         if ((escolhaJogador.equalsIgnoreCase("pedra") && escolhaMaquina.equals("tesoura")) ||
                 (escolhaJogador.equalsIgnoreCase("papel") && escolhaMaquina.equals("pedra")) ||
                 (escolhaJogador.equalsIgnoreCase("tesoura") && escolhaMaquina.equals("papel"))) {
@@ -34,13 +36,15 @@ public class Jokenpo {
 
     }
 
-    // Teste do Jokenpo
+    // Método para executar o jogo
     public static void main(String[] args) {
+        //Objeto que le a escolha do jogador
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Escolha entre pedra, papel ou tesoura:");
         String escolhaJogador = scanner.nextLine();
 
+        //Chama o método e exibe resultado
         System.out.println(jogar(escolhaJogador));
 
         scanner.close();

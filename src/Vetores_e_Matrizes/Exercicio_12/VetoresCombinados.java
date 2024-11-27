@@ -10,13 +10,16 @@ import java.util.Arrays;
 import java.util.Random;
 
 public class VetoresCombinados {
+    //Método para gerar um vetor com números inteiros aleatórios e ordená-los
     public static int[] gerarEOrdernarVetor(int tamanho, int max) {
         Random random = new Random();
         int[] vetor = new int[tamanho];
 
         for (int i = 0; i < tamanho; i++) {
-            vetor[i] = random.nextInt(max);
+            vetor[i] = random.nextInt(max); //Gera número aleatório e insere no vetor
         }
+
+        //Ordena o vetor
         Arrays.sort(vetor);
         return vetor;
     }
@@ -26,13 +29,17 @@ public class VetoresCombinados {
         int tamanho = 50;
         int max = 100;
 
+        //Gera e ordena o primeiro vetor
         int[] vetor1 = gerarEOrdernarVetor(tamanho, max);
+
+        //Gera e ordena o segundo vetor
         int[] vetor2 = gerarEOrdernarVetor(tamanho, max);
 
         int[] vetorCombinado = new int[vetor1.length + vetor2.length];
         System.arraycopy(vetor1, 0, vetorCombinado, 0, vetor1.length);
         System.arraycopy(vetor2, 0, vetorCombinado, vetor1.length, vetor2.length);
 
+        //Ordena o vetor combinado
         Arrays.sort(vetorCombinado);
 
         System.out.println("Vetor 1 ordenado: " + Arrays.toString(vetor1));

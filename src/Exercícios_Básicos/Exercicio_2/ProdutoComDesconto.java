@@ -15,11 +15,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Produto {
-    String nome;
-    int quantidade;
-    double preco;
+    String nome; //Nome do produto
+    int quantidade; //Quantidade disponível
+    double preco; //Preço
 
-
+    //Construtor de Produto
     public Produto(String nome, int quantidade, double preco) {
         this.nome = nome;
         this.quantidade = quantidade;
@@ -28,6 +28,7 @@ class Produto {
 }
 
 public class ProdutoComDesconto {
+    //Lista que contén os produtos cadastrados
     static List<Produto> produtos = new ArrayList<>();
 
     static {
@@ -38,6 +39,7 @@ public class ProdutoComDesconto {
 
     }
 
+    //Método que calcula o valor total com desconto
     public static String calcularDesconto(String nome, int quantidade) {
         Produto produtoEncontrado = null;
 
@@ -55,9 +57,9 @@ public class ProdutoComDesconto {
                     " excede o número disponível de " + produtoEncontrado.quantidade + " unidades.";
         }
 
+        //Calcula o valor total sem desconto
         double valorTotal = produtoEncontrado.preco * quantidade;
-        double
-                desconto = 0;
+        double desconto = 0;
 
         if (quantidade == 10) {
             desconto = 0;
@@ -75,9 +77,9 @@ public class ProdutoComDesconto {
                 ", Valor Total: R$ " + String.format("%.2f", valorComDesconto);
 
     }
-
-    // Teste de produtos
+    //Método que calcula descontos
     public static void main(String[] args) {
+    // Teste de produtos
         System.out.println(calcularDesconto("Lápis", 9));
         System.out.println(calcularDesconto("Mochila", 21));
         System.out.println(calcularDesconto("Estojo", 60));

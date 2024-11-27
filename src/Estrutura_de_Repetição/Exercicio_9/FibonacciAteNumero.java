@@ -24,15 +24,17 @@ public class FibonacciAteNumero {
         }
         scanner.close();
     }
-
+    //Método que calcula a sequência até o limite
     public static ArrayList<Integer> calcularFibonacciAteNumero(int limite) {
         ArrayList<Integer> fibonacci = new ArrayList<>();
         fibonacci.add(0);
         fibonacci.add(1);
 
         while (true) {
+            //Calcula o próximo número da sequência
             int proximoNumero = fibonacci.get(fibonacci.size() - 1) + fibonacci.get(fibonacci.size() - 2);
             if (proximoNumero > limite) break;
+            //Adiciona o próximo número à lista
             fibonacci.add(proximoNumero);
         }
         return fibonacci;

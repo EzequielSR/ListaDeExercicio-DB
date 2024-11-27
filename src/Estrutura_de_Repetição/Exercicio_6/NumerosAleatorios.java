@@ -13,10 +13,12 @@ import java.util.Random;
 public class NumerosAleatorios {
 
     public static void main(String[] args) {
+        //Armazena os números aleatórios gerados
         List<Integer> numeros = new ArrayList<>();
         Random random = new Random();
 
         for (int i = 0; i < 10; i++) {
+            //Gera o número aleatório de 0 a 100
             numeros.add(random.nextInt(101));
         }
 
