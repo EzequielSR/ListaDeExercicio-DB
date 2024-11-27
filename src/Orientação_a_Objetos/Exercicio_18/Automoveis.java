@@ -56,7 +56,6 @@ class Carro extends Automovel {
     }
 
 
-    @Override
     public void exibirDetalhes() {
         super.exibirDetalhes();
         System.out.println("Portas: " + numeroPortas);
