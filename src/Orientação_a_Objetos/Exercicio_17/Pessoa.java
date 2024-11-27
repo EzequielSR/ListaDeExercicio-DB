@@ -27,7 +27,6 @@ public class Pessoa {
     }
 
 
-    // Método para exibir detalhes da pessoa
     public void exibirDetalhes() {
         System.out.println("Nome: " + nome + ", Idade: " + idade);
         System.out.println("Pai: " + (pai != null ? pai.nome : "Desconhecido"));
