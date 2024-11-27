@@ -32,8 +32,8 @@ public class OrdernarVetor {
     }
 
     public static void imprimirVetor(int[] vetor) {
-        for (int i = 0; i < vetor.length; i++) {
-            System.out.print(vetor[i] + " ");
+        for (int j : vetor) {
+            System.out.print(j + " ");
         }
         System.out.println();
     }

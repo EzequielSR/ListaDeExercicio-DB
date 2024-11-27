@@ -14,9 +14,9 @@ import java.util.Scanner;
 
 
 class Emprestimo {
-    private Pessoa pessoa;
-    private Livro livro;
-    private Date dataEmprestimo;
+    private final Pessoa pessoa;
+    private final Livro livro;
+    private final Date dataEmprestimo;
 
 
     public Emprestimo(Pessoa pessoa, Livro livro) {
@@ -61,9 +61,9 @@ class Emprestimo {
 
 
 class Livro {
-    private String titulo;
-    private String autor;
-    private String isbn;
+    private final String titulo;
+    private final String autor;
+    private final String isbn;
     private boolean disponivel;
 
 
@@ -103,17 +103,12 @@ class Livro {
     public String getIsbn() {
         return isbn;
     }
-
-
-    public boolean isDisponivel() {
-        return disponivel;
-    }
 }
 
 
 class Pessoa {
-    private String nome;
-    private ArrayList<Livro> livrosEmprestados;
+    private final String nome;
+    private final ArrayList<Livro> livrosEmprestados;
 
 
     public Pessoa(String nome) {
@@ -206,13 +201,13 @@ public class Biblioteca {
                     scanner.nextLine();
 
 
+                    Emprestimo devolucao;
                     if (escolhaDevolucao == 1) {
-                        Emprestimo devolucao = new Emprestimo(pessoa1, livro1);
-                        devolucao.realizarDevolucao();
+                        devolucao = new Emprestimo(pessoa1, livro1);
                     } else {
-                        Emprestimo devolucao = new Emprestimo(pessoa1, livro2);
-                        devolucao.realizarDevolucao();
+                        devolucao = new Emprestimo(pessoa1, livro2);
                     }
+                    devolucao.realizarDevolucao();
                     break;
 
 
