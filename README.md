@@ -1,11 +1,11 @@
 # 📝Lista de Exercícios - DB
 
 ## **📋Índice**
-- [📖 Descrição](#-descrição)
-- [🎯 Objetivo](#-objetivo)
-- [📌 Lista de Exercícios](#-lista-de-exercícios)
-- [👨‍💻 Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [⚖ Licença](#-licença)
+- [📖 Descrição](#descrição)
+- [🎯 Objetivo](#objetivo)
+- [📌 Lista de Exercícios](#lista-de-exercícios)
+- [👨‍💻 Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [⚖ Licença](#licença)
 
 ---
 ## **📖Descrição**
