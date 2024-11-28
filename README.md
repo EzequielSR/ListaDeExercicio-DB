@@ -9,11 +9,11 @@
 
 ---
 ## **📖Descrição**
-Este repositório contém uma série de exercícios em **Java** desenvolvidos para praticar conceitos básicos e intermediários da linguagem. Os exercícios incluem manipulação de dados, uso de estruturas de controle, e interação com o usuário por meio do console.
+Este repositório contém uma série de exercícios em **[Java](https://www.java.com)** desenvolvidos para praticar conceitos básicos e intermediários da linguagem. Os exercícios incluem manipulação de dados, uso de estruturas de controle, e interação com o usuário por meio do console.
 
 ---
 ## **🎯Objetivo**
-Aprimorar as habilidades de programação em **Java** através de exercícios que exploram lógica de programação e recursos da linguagem.
+Aprimorar as habilidades de programação em **[Java](https://www.java.com)** através de exercícios que exploram lógica de programação e recursos da linguagem.
 
 ---
 
@@ -143,8 +143,8 @@ calcule a menor quantidade de notas. (difícil)
 ---
 
 ## **👨‍💻Tecnologias Utilizadas**
-- Linguagem: **Java**
-- Ferramentas: IntelliJ IDEA Community Edition, IDE de sua preferência
+- Linguagem: **[Java](https://www.java.com)**
+- Ferramentas: [IntelliJ IDEA Comunnity Edition](https://www.jetbrains.com/products/compare/?product=idea-ce&product=idea), IDE de sua preferência
 
 ---
 
